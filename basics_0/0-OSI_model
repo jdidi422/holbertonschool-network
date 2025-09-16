@@ -1,2 +1,23 @@
-2
-2
+# OSI Model
+
+## 1. What is the OSI model?
+The OSI model is a **conceptual model** that characterizes the communication functions of a telecommunication system **without regard to their underlying internal structure and technology**.  
+It is not tangible; it does not perform any function by itself.  
+It helps understand complex interactions in network communications.
+
+## 2. How is the OSI model organized?
+The OSI model is organized **from the lowest to the highest level**:
+
+1. **Physical Layer (Layer 1):** Transmission of raw bits via electrical signals, light, or radio waves.  
+2. **Data Link Layer (Layer 2):** Node-to-node data transfer, error detection/correction.  
+3. **Network Layer (Layer 3):** Routing, logical addressing (IP, ICMP).  
+4. **Transport Layer (Layer 4):** End-to-end communication, reliability, flow control (TCP/UDP).  
+5. **Session Layer (Layer 5):** Managing sessions/connections between applications.  
+6. **Presentation Layer (Layer 6):** Data translation, encryption, compression.  
+7. **Application Layer (Layer 7):** Application-specific communication like HTTP, FTP, SNMP.
+
+---
+
+**Focus for this project:**  
+- **Transport Layer:** TCP/UDP  
+- **Network Layer:** IP, ICMP

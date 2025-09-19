@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# This script modifies the /etc/hosts file to:
-# 1. Resolve localhost to 127.0.0.2
-# 2. Resolve facebook.com to 8.8.8.8
+# Script that changes localhost and facebook.com IPs
 
 # Ensure the script is run as root
 if [ "$EUID" -ne 0 ]; then
@@ -9,10 +7,10 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-# Backup the original /etc/hosts
+# Backup /etc/hosts
 cp /etc/hosts /etc/hosts.bak
 
-# Remove old localhost/facebook.com and write to temp file
+# Remove old localhost/facebook.com lines and save to temp file
 grep -vE 'localhost|facebook.com' /etc/hosts > /tmp/hosts.tmp
 
 # Add new entries

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-# Displays all listening TCP/UDP ports with PID and program name
-
-sudo ss -tulnp
-

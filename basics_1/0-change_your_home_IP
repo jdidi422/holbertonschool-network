@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 # 0-change_your_home_IP
 
 # Ensure the script is run as root
